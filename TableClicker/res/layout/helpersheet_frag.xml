@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/helpersheetfrag_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/helpername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="32sp"
+        android:textColor="#11F22E"
+        android:text="Helper name" />
+    
+    <TextView 
+        android:id="@+id/helperlevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helper_curmoney"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:textColor="#11F22E"
+        android:text="Level 0" />
+    
+    <TextView 
+        android:id="@+id/helper_curmoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:textColor="#11F22E"
+        android:text="Your Gold: " />
+    
+    <ImageView
+        android:id="@+id/helperimage"
+        android:layout_width="174dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/helpername"
+        android:maxHeight="175dp"
+        android:maxWidth="175dp"
+        android:src="@drawable/lily" />
+
+    <TextView
+        android:id="@+id/helperinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helperimage"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp"
+        android:textColor="#11F22E"
+        android:text="More info" />
+    
+    <TextView 
+        android:id="@+id/helperfps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helperinfo"
+        android:layout_alignParentLeft="true"
+        android:textSize="20sp"
+        android:textColor="#11F22E"
+        android:text="FPS: " />
+    
+    
+    <TextView 
+        android:id="@+id/helpercost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helperfps"
+        android:layout_alignParentLeft="true"
+        android:textSize="20sp"
+        android:textColor="#11F22E"
+        android:text="Cost: " />
+    
+    <Button 
+        android:id="@+id/purchasehelper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/helpercost"
+        android:layout_alignParentRight="true"
+        android:textColor="#11F22E"
+        android:text="Purchase" />
+
+</RelativeLayout>

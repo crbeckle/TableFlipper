@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="horizontal" >
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_weight="0.35"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textColor="#11F22E"
+            android:textSize="12sp"
+            android:text="Vibration on Table Flipped:" />
+        
+        <Button 
+            android:id="@+id/options_vibratebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#11F22E"
+            android:text="Vibration Off" />
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="#11F22E"
+            android:textSize="12sp"
+            android:text="Music during Game Play:" />
+        
+        <Button 
+            android:id="@+id/options_musicbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#11F22E"
+            android:text="Music On" />
+        
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="0dp"
+        android:layout_weight="0.65"
+        android:layout_height="fill_parent" >
+        
+        <TextView 
+            android:id="@+id/savefileheader"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#11F22E"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:text="Save File Contents" />
+        
+        <TextView 
+            android:id="@+id/options_redditgold"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#11F22E"
+            android:textSize="20sp"
+            android:layout_below="@+id/savefileheader"
+            android:layout_alignParentLeft="true"
+            android:text="Reddit Gold" />
+        
+        <TextView 
+            android:id="@+id/options_maxlevel"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#11F22E"
+            android:textSize="20sp"
+            android:layout_below="@+id/options_redditgold"
+            android:layout_alignParentLeft="true"
+            android:text="Max Level" />
+        
+        <TextView 
+            android:id="@+id/options_fps"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#11F22E"
+            android:textSize="20sp"
+            android:layout_below="@+id/options_maxlevel"
+            android:layout_alignParentLeft="true"
+            android:text="FPS" />
+        
+        <TextView 
+            android:id="@+id/options_flipstrength"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#11F22E"
+            android:textSize="20sp"
+            android:layout_below="@+id/options_fps"
+            android:layout_alignParentLeft="true"
+            android:text="Flip Strength" />
+        
+        <TextView 
+            android:id="@+id/options_helpers"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#11F22E"
+            android:textSize="20sp"
+            android:layout_below="@+id/options_flipstrength"
+            android:layout_alignParentLeft="true"
+            android:text="Helpers" />
+        
+        <TextView 
+            android:id="@+id/options_upgradelevel"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#11F22E"
+            android:textSize="20sp"
+            android:layout_below="@+id/options_helpers"
+            android:layout_alignParentLeft="true"
+            android:text="Upgrade Level" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

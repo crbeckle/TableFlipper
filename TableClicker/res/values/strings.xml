@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- GENERIC APP STRINGS -->
+    <string name="app_name">Table Clicker</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- TITLE SCREEN STRINGS -->
+    <string name="ts_continuebutton">Continue</string>
+    <string name="ts_newgamebutton">New Game</string>
+    <string name="ts_instructionsbutton">Instructions</string>
+    <string name="ts_optionsbutton">Options</string>
+    <string name="ts_lennydescription">Want that booty!</string>
+    <string name="ts_lennysaystext">I\'ll flip your table!</string>
+    <string name="ts_titletext">TABLE CLICKER</string>
+    
+    <!-- GAME SCREEN STRINGS -->
+    <string name="characters_tab">Characters</string>
+    <string name="game_tab">Game</string>
+    <string name="helpers_tab">Helpers</string>
+    <string name="levelselection">Level 1</string>
+    <string name="saveoptions">Save Options</string>
+    <string name="leveltext">LEVEL 1</string>
+    
+    <string name="gs_leveltext">Level X</string>
+    <string name="gs_currencytext">Currency</string>
+    <string name="gs_flipstrengthtext">Flip Strength</string>
+    <string name="gs_fpstext">FPS</string>
+    <string name="gs_charview">Your character</string>
+    <string name="gs_enemyview">Your foe!</string>
+        
+    <!-- HELPER SCREEN STRINGS -->
+    <!-- CHARACTER SCREEN STRINGS -->
+    <!-- INSTRUCTIONS SCREEN STRINGS -->
+    <string name="instr_donebutton">Got it!</string>
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/charactersheetfrag_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/charname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="32sp"
+        android:textColor="#11F22E"
+        android:text="Character name" />
+    
+    <TextView 
+        android:id="@+id/char_curmoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:textColor="#11F22E"
+        android:text="Your Gold: " />
+    
+    <ImageView
+        android:id="@+id/charimage"
+        android:layout_width="174dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/charname"
+        android:maxHeight="175dp"
+        android:maxWidth="175dp"
+        android:src="@drawable/donger" />
+
+    <TextView
+        android:id="@+id/charinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charimage"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp"
+        android:textColor="#11F22E"
+        android:text="More info" />
+    
+    <TextView 
+        android:id="@+id/charfs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charinfo"
+        android:layout_alignParentLeft="true"
+        android:textSize="20sp"
+        android:textColor="#11F22E"
+        android:text="Flip Strength: " />
+    
+    
+    <TextView 
+        android:id="@+id/charcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charfs"
+        android:layout_alignParentLeft="true"
+        android:textSize="20sp"
+        android:textColor="#11F22E"
+        android:text="Cost: " />
+    
+    <Button 
+        android:id="@+id/purchasechar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/charcost"
+        android:layout_alignParentRight="true"
+        android:textColor="#11F22E"
+        android:text="Purchase" />
+
+</RelativeLayout>

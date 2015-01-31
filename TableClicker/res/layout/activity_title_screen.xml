@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="chris.ben.tableclicker.TitleScreen"
+    android:background="#000000" >
+
+    <ImageView
+        android:id="@+id/ts_mainimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"  
+ 		android:maxWidth="175dp"  
+  		android:maxHeight="175dp"  
+  		android:scaleType="fitCenter"  
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/biglenny"
+        android:contentDescription="@string/ts_lennydescription" />
+
+    <Button
+        android:id="@+id/ts_continuebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ts_newgamebutton"
+        android:layout_alignLeft="@+id/ts_newgamebutton"
+        android:layout_alignRight="@+id/ts_newgamebutton"
+        android:text="@string/ts_continuebutton"
+        android:textColorLink="#11F22E"
+        android:textColor="#11F22E" />
+
+    <Button
+        android:id="@+id/ts_newgamebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:textColorLink="#11F22E"
+        android:text="@string/ts_newgamebutton"
+        android:textColor="#11F22E" />
+
+    <Button
+        android:id="@+id/ts_instructionsbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColorLink="#11F22E"
+        android:textColor="#11F22E"
+        android:text="@string/ts_instructionsbutton" />
+    
+    <Button
+        android:id="@+id/ts_optionsbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ts_instructionsbutton"
+        android:layout_alignRight="@+id/ts_instructionsbutton"
+        android:layout_above="@+id/ts_instructionsbutton"
+        android:text="@string/ts_optionsbutton"
+        android:textColor="#11F22E"
+        android:textColorLink="#11F22E" />
+
+    <ProgressBar
+        android:id="@+id/ts_loadgameprogress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ts_lennysaystext"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/ts_handrightimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ts_mainimage"
+        android:layout_alignBottom="@+id/ts_mainimage"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/ts_lennydescription"
+        android:scaleType="fitCenter"
+        android:maxHeight="175dp"
+        android:maxWidth="175dp"
+        android:src="@drawable/lennyhandright" />
+    
+    <ImageView
+        android:id="@+id/ts_handleftimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ts_mainimage"
+        android:layout_alignBottom="@+id/ts_mainimage"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/ts_lennydescription"
+        android:scaleType="fitCenter"
+        android:maxHeight="175dp"
+        android:maxWidth="175dp"
+        android:src="@drawable/lennyhandleft" />
+
+    <TextView
+        android:id="@+id/ts_lennysaystext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ts_mainimage"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ts_lennysaystext"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#11F22E" />
+    
+    <TextView 
+        android:id="@+id/ts_titletext"
+        android:textColor="#11F22E"
+        android:textStyle="bold"
+        android:text="@string/ts_titletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/ts_continuebutton"
+        android:textSize="35sp" />
+
+</RelativeLayout>
